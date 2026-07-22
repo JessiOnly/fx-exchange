@@ -47,3 +47,4 @@ public class RateController {
         return conversions.convert(req.base(), req.quote(), req.amount());
     }
 }
+// test
