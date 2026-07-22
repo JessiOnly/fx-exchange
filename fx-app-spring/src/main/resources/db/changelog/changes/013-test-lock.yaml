@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: 013-test-lock
+      author: fx
+      comment: This will cause Liquibase to wait for the lock
+      changes:
+        - addColumn:
+            tableName: currency
+            columns:
+              - column: { name: last_updated, type: DATETIME }

@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: 010-broken-on-purpose
+      author: fx
+      comment: Intentional typo FIXED
+      changes:
+        - addColumn:
+            tableName: currency
+            columns:
+              - column: { name: region, type: VARCHAR(20) }

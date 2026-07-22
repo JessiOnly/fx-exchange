@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: 009-add-nzd
+      author: fx
+      comment: Add NZ Dollar as a new trading currency
+      changes:
+        - insert:
+            tableName: currency
+            columns:
+              - column: { name: code,   value: NZD }
+              - column: { name: name,   value: "NZ Dollar" }
+              - column: { name: symbol, value: "NZ$" }
+      rollback:
+        - delete:
+            tableName: currency
+            where: code = 'NZD'

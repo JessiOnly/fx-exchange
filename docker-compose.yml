@@ -12,7 +12,6 @@ services:
       - "${DB_PORT:-3307}:3306"
     volumes:
       - fx-db-data:/var/lib/mysql
-      - ./fx-app-spring/ops/fxdb-seed.sql:/docker-entrypoint-initdb.d/01-seed.sql:ro
     healthcheck:
       test: ["CMD-SHELL", "mysqladmin ping -h localhost -u$${MYSQL_USER} -p$${MYSQL_PASSWORD}"]
       interval: 5s

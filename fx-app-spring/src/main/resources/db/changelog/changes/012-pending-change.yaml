@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: 012-pending-change
+      author: fx
+      comment: Pending work for lock demonstration
+      changes:
+        - addColumn:
+            tableName: currency
+            columns:
+              - column: { name: active, type: BOOLEAN, defaultValue: "true" }
