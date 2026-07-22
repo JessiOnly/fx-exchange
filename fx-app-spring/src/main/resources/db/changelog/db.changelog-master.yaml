@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - include: { file: classpath:db/changelog/changes/001-create-currency.yaml }
+  - include: { file: classpath:db/changelog/changes/002-create-account.yaml }
+  - include: { file: classpath:db/changelog/changes/003-create-fx-rate.yaml }
+  - include: { file: classpath:db/changelog/changes/004-create-transfer.yaml }
+  - include: { file: classpath:db/changelog/changes/005-seed-currency.yaml }
+  - include: { file: classpath:db/changelog/changes/006-seed-account.yaml }
+  - include: { file: classpath:db/changelog/changes/007-seed-fx-rate.yaml }
+  - include: { file: classpath:db/changelog/changes/008-seed-transfer.yaml }
+  - include: { file: classpath:db/changelog/changes/009-add-nzd.yaml }

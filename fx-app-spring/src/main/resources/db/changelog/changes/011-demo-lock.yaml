@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: 011-demo-lock
+      author: fx
+      comment: Small change to have pending work for lock demo
+      changes:
+        - addColumn:
+            tableName: currency
+            columns:
+              - column: { name: notes, type: VARCHAR(100) }

@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 005-seed-currency
+      author: fx
+      changes:
+        - sqlFile:
+            path: db/changelog/data/005-currency.sql
+            splitStatements: false
+            stripComments: true
+      rollback:
+        - delete: { tableName: currency }
