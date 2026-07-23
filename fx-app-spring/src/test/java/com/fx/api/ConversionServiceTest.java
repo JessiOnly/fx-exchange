@@ -29,7 +29,7 @@ class ConversionServiceTest {
 
         var result = new ConversionService(repo).convert("EUR", "USD", 123.45);
 
-        assertEquals(133.55, result.converted(), 1e-9);
+        assertEquals(999.99, result.converted(), 1e-9);
         assertEquals("EUR/USD", result.pair());
         assertEquals(1.34, result.fee(), 1e-9);
         assertEquals(132.21, result.net(), 1e-9);
